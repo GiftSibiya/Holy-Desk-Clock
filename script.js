@@ -2,6 +2,7 @@ let hrs = document.getElementById('hrs');
 let min = document.getElementById('min');
 let sec = document.getElementById('sec');
 let day = document.getElementById('day');
+let dayNum = document.getElementById('dayNum')
 let month = document.getElementById('month');
 let year = document.getElementById('year');
 
@@ -12,7 +13,7 @@ function time(){
     hrs.innerHTML = (currentTime.getHours() < 10? "0" : "") + currentTime.getHours();
     min.innerHTML = (currentTime.getMinutes() < 10? "0" : "") + currentTime.getMinutes();
     sec.innerHTML = (currentTime.getSeconds() <10? "0" : "") + currentTime.getSeconds();
-    
+    dayNum.innerHTML = currentTime.getDay();
     
     let monthName = currentTime.toLocaleString('default', {month: 'long'});
     let dayName = currentTime.toLocaleString('default', {weekday: 'long'});

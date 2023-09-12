@@ -26,12 +26,31 @@
     padding: 2vw 5vh;
     border-radius: 10px;
 }
-.todayDate{
-    font-size: 2vw;
-    width: 40%;
+.dayWord{
+    font-family: sans-serif;
+    font-style: bold;
+    letter-spacing: 2px;
+    font-size: large;
+    width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+}
+.dateLine{
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 28px;
+}
+.todayDate{
+    display: flex;
+    flex-direction: column;
+    font-size: 2vw;
+    width: 50%;
+    display: flex;
+    align-items: center;
     margin-top: 1vh;
     color: white;
-
 }
