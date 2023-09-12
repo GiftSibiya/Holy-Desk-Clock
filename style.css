@@ -1,83 +1,37 @@
+/* Font from Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Varela+Round&display=swap');
 *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
-
 .hero{
-    width: 100%;
-    height: 100vh;
     background: linear-gradient(54deg, #42047e, #015d4a);
-    color: #fff;
-    position: relative;
+
 }
 
 .container{
-    width: 800px;
-    height: 180px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
 }
 .clock{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(235, 1, 255, 0.11);
-    backdrop-filter: blur(40px);
+    color: white;
+    font-size: 12vw;
+    background-color: rgba(255, 255, 255, 0.11);
+    padding: 2vw 5vh;
     border-radius: 10px;
+}
+.todayDate{
+    font-size: 2vw;
+    width: 40%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}  
+    justify-content: space-between;
+    margin-top: 1vh;
+    color: white;
 
-.container::before{
-    content: '';
-    width: 180px;
-    height: 180px;
-    background: #ff016b;
-    border-radius: 5px;
-    position: absolute;
-    top: -50px;
-    left: -50px;
-    z-index: -1;
-}
-.container::after{
-    content: '';
-    width: 180px;
-    height: 180px;
-    background: #0077ff;
-    border-radius: 50%;
-    position: absolute;
-    right: -30px;
-    bottom: -50px;
-    z-index: -1;
-}
-.clock span{
-    font-size: 80px;
-    width: 110px;
-    display: inline-block;
-    text-align: center;
-    position: relative;
-}
-
-.clock span::after{
-    content: '';
-    font-size: 16px;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-#hrs::after{
-    content: 'HRS';
-}
-#min::after{
-    content: 'MIN';
-}
-#sec::after{
-    content: "SEC";
 }
