@@ -5,11 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Digital Clock</title>
     <link rel="stylesheet" href="style.css" />
+
+    <!--JavaScript link-->
     <script defer src="script.js"></script>
+    <!--Boxicons link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="hero">
       <div class="container">
+        <div class="apps">
+          <!--Weather app Section-->
+          <div class="weather">
+            <div class="search">
+              <input
+                type="text"
+                class="searchBar"
+                placeholder=" enter location name"
+                spellcheck="false"
+              />
+              <button class="searchButton"><i class="bx bx-search"></i></button>
+            </div>
+            <div class="weatherIcon">
+              <span class="cityName">Jozi</span>
+              <div class="iconText">
+                <span class="icon"><i class="bx bx-cloud"></i></span>
+                <span class="temp">22°C</span>
+              </div>
+              <span class="iconAlt">cloudy</span>
+            </div>
+            <div class="extra">
+              <div class="wind">
+                <span class="windIcon"><i class="bx bx-wind"></i></span>
+                <div class="windInfo">
+                  <span class="windText">wind Speed</span>
+                  <span class="reading">69km/h</span>
+                </div>
+              </div>
+              <div class="humid">
+                <span class="humidIcon"><i class="bx bxs-droplet"></i></span>
+                <div class="humidityInfo">
+                  <span class="humidText">Humidity</span>
+                  <span class="reading">42%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Calender Section-->
+          <div class="calender"></div>
+        </div>
         <div class="clock">
           <span id="hrs">00</span>
           <span>:</span>

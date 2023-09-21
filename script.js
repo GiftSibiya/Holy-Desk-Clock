@@ -13,7 +13,7 @@ function time(){
     hrs.innerHTML = (currentTime.getHours() < 10? "0" : "") + currentTime.getHours();
     min.innerHTML = (currentTime.getMinutes() < 10? "0" : "") + currentTime.getMinutes();
     sec.innerHTML = (currentTime.getSeconds() <10? "0" : "") + currentTime.getSeconds();
-    dayNum.innerHTML = currentTime.getDay();
+    dayNum.innerHTML = currentTime.getDate();
     
     let monthName = currentTime.toLocaleString('default', {month: 'long'});
     let dayName = currentTime.toLocaleString('default', {weekday: 'long'});
