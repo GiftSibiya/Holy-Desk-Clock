@@ -10,7 +10,7 @@
 
 }
 :root{
-    --weatherBox: 30vw;
+    --weatherBox: 30vh;
 }
 
 .container{
@@ -24,14 +24,13 @@
 
 .apps{
     display: flex;
+    width: 80%;
+    height: 40vh;
     justify-content: space-around;
     align-items: center;
-    border: 2px solid 255;
-    width: 100%;
-    height: 50vh;
 }
 
-/* Weather Section*/
+/*  <<<<<<<<<<< Weather Section >>>>>>>>>>*/
 .weather{   
     display: flex;
     flex-direction: column;
@@ -46,124 +45,105 @@
     display: flex;
     height:fit-content;
     justify-content: center;
+    justify-content: space-around;
     width: 100%;
     margin-top: 2vh;
     margin-bottom: 2vh;
 }
 
 .searchBar{
-    width: 70%;
-    margin-right: 2vh;
-    height: 5vh;
-    color: purple;
     border: none;
-    color: gray;
+    width: 70%; 
+    height: 5vh;
+    color: black;
+    font-size: 11px; 
+    padding-left: 3px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.5);
 }
 
 .searchButton{
     width: 5vh;
-    height: 5vh;
     border: none;
     border-radius: 7px;
-    font-size: 15px;
     background: rgba(255, 255, 255, 0.5);
 }
+
+.cityName{
+    font-family: sans-serif;
+    color: white;
+    font-size: 3vh;
+}
+
 .weatherIcon{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: fit-content;
-    justify-content: space-between;
 }
-
-.cityName{
-    margin-top: 1vh;
-    font-family: sans-serif;
-    color: white;
-    font-size: 20px;
-}
-
 .iconText{
-    width: 60%;
+    width: 80%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    justify-content: space-between;
-
+    justify-content: space-around;
 }
 .icon{
-    padding: 0.1px;
-    font-size: 50px;
+    font-size: 6vh;
     color: white;
 }
+.temp{
+    font-size: 5vh;
+    color: white;
+    font-family: sans-serif;
+}
 .iconAlt{
-    font-size: 13px;
+    display: flex;
+    justify-content: center ;
+    width: 50%;
+    letter-spacing: 0.4vw;
+    font-size: 2vh;
     font-family:sans-serif;
     color: white;
 }
 
-.temp{
-    font-size: 30px;
-    color: white;
-    font-family: sans-serif;
-}
+/* This is for wind and humidity info*/
 
 .extra{
+    display: flex;
     font-family: sans-serif;
-    display: flex;
     justify-content: space-around;
-    height: 15vh;
-    margin-top: 2vh;
+    height: 8vh;
+    border: 2px solid red;
 }
-.wind{
-    display: flex;
-    font-size: 40px;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-}
-
-.windInfo{
-    display: flex;
-    flex-direction: column;
-    font-size: 12px;
-    color: rgb(195, 195, 195);
-}
-.windIcon{
-    color: white;
-    font-size: 30px;
-    padding: 5px;
-    padding: 10px;
-}
-.humid{
+.extraBlock{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
     width: 50%;
-    font-size: 40px;
+    height: 7vh;
 }
-.humidIcon{
-    padding: 10px;
-    color: white;
-    font-size: 30px;
-}
-.reading{
-    color: white;
-    font-size: 14px;
-}
-
-.humidityInfo{
+.extraInfo{
     display: flex;
+    justify-content: center;
+    width: 70%;
+    height: 100%;
     flex-direction: column;
-    font-size: 12px;
+    font-size: 2vh;
     color: rgb(195, 195, 195);
 }
+.extraIcon{
+    padding-left: 5px;
+    color: white;
+    font-size: 20px;
+}
+.readingText{
+    color: white;
+    font-size: 1.8vh;
+}
 
-
-/*Calender Part of code*/
+/*<<<<<<<<<< Calender Section >>>>>>>>>>*/
 .calender{
     width: var(--weatherBox);
     height: var(--weatherBox);
