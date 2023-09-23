@@ -28,7 +28,7 @@ function time(){
 /*<<<<<<<<< Weather App >>>>>>>>>> */ 
 
 /* Variables */
-const apiKey = "7a3f5c184fc035469d89699c6faa90a8";
+const apiKey = "";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
 const searchBox = document.querySelector('.search input');
