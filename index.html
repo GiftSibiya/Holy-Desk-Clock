@@ -22,34 +22,35 @@
           <div class="weather">
             <div class="search">
               <input
+              id="search"
                 type="text"
                 class="searchBar"
-                placeholder=" enter location name"
+                placeholder=" enter city"
                 spellcheck="false"
               />
-              <button class="searchButton"><i class="bx bx-search"></i></button>
+              <button id="searchBtn" class="searchButton"><i class="bx bx-search"></i></button>
             </div>
             <div class="weatherIcon">
-              <span class="cityName">Jozi</span>
+              <span id="name" class="cityName">Enter City Name</span>
               <div class="iconText">
-                <span class="icon"><i class="bx bx-cloud"></i></span>
-                <div class="temp">22°C</div>
+                <span class="icon"></i></span>
+                <div id="temp" class="temp"></div>
               </div>
-              <span class="iconAlt">cloudy</span>
+              <span class="iconAlt">-</span>
             </div>
             <div class="extra">
               <div class="extraBlock">
                 <span class="extraIcon"><i class="bx bx-wind"></i></span>
                 <div class="extraInfo">
                   <span class="readingText">wind Speed</span>
-                  <span class="reading">69km/h</span>
+                  <span id="windReading" class="reading">km/h</span>
                 </div>
               </div>
               <div class="extraBlock">
-                <span class="extraIcon"><i class="bx bxs-droplet"></i></span>
+                <span class="extraIcon"><i class='bx bx-water'></i></span>
                 <div class="extraInfo">
                   <span class="readingText">Humidity</span>
-                  <span class="reading">42%</span>
+                  <span id="humidityReading" class="reading">%</span>
                 </div>
               </div>
             </div>
@@ -85,7 +86,6 @@
     1. Add a cute animation
     2. Add Randob Bible Verse Generator.
     3. Add Changing Backgrounds.
-    4. Add Weather App.
-    5. Optional Calender.
+    4. Optional Calender.
   -->
 </html>
