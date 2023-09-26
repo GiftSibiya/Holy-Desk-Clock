@@ -38,17 +38,18 @@
     border-radius: 10px;
     border: 2px solid white;
     background: rgba(255, 255, 255, 20%);
-}
-
-.search{
-    display: flex;
-    height:fit-content;
-    justify-content: center;
-    justify-content: space-around;
+    
+    .search{
+        display: flex;
+        height:fit-content;
+        justify-content: center;
+        justify-content: space-around;
     width: 100%;
     margin-top: 2vh;
     margin-bottom: 2vh;
 }
+
+
 
 .searchBar{
     border: none;
@@ -143,11 +144,16 @@
 }
 
 /*<<<<<<<<<< Calender Section >>>>>>>>>>*/
+}
 .calender{
-    width: var(--weatherBox);
-    height: var(--weatherBox);
-    border-radius: 10px;
-    border: 2px solid white;
+        display: flex;
+        flex-direction: column;
+        width: var(--weatherBox);
+        height: var(--weatherBox);
+        border-radius: 10px;
+        border: 2px solid white;
+        background: rgba(255, 255, 255, 20%);
+
 }
 .clock{
     color: white;
