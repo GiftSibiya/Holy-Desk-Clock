@@ -84,5 +84,56 @@ searchBtn.addEventListener ("click", ()=>{
     }
 }) 
 
-// In the event of a misspelled city name it will throw undefined on the city name. 
+//Calendar Section //
+const currentDate = document.querySelector(".currentDate");
+const days = document.querySelector('.days');
+let icons = document.querySelectorAll('.icons span');
+
+let date = new Date();
+currentYear = date.getFullYear();
+currentMonth = date.getMonth();
+monthName = date.toLocaleString('default', { month: 'long' });
+
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+const renderCalendar = () => {
+    let firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDay();
+    let lastDateOfMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+    let liTag = '';
+
+    const today = new Date(); // Get today's date
+
+    for (let i = firstDayOfMonth; i > 0; i--) {
+        liTag += `<li class="inactive">${lastDateOfMonth - i + 1}</li>`;
+    }
+
+    for (let i = 1; i <= lastDateOfMonth; i++) {
+        // Check if the date being rendered matches today's date
+        if (currentYear === today.getFullYear() && currentMonth === today.getMonth() && i === today.getDate()) {
+            liTag += `<li class="highlighted">${i}</li>`;
+        } else {
+            liTag += `<li>${i}</li>`;
+        }
+    }
+
+    // Calculate the first day of the next month
+    let firstDayOfNextMonth = (firstDayOfMonth + lastDateOfMonth) % 7;
+
+    for (let i = 0; i < 6 - firstDayOfNextMonth; i++) {
+        liTag += `<li class="inactive">${i + 1}</li>`;
+    }
+
+    currentDate.innerHTML = `${months[currentMonth]} ${currentYear}`;
+    days.innerHTML = liTag;
+}
+
+renderCalendar();
+
+icons.forEach(icon => {
+    icon.addEventListener("click", () => {
+        currentMonth = icon.id === "prev" ? currentMonth - 1 : currentMonth + 1;
+        renderCalendar();
+    })
+})
+
 //This is crying for some exeption handling
