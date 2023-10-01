@@ -46,7 +46,7 @@ const windReading = document.getElementById('windReading');
 async function checkWeather(city) {
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
     let data = await response.json();
-    //Check Api //
+    //Check Api on line 31 //
     console.log(data);
     
     cityName.innerHTML = data.name;
@@ -80,7 +80,7 @@ searchBtn.addEventListener ("click", ()=>{
     try{
         checkWeather(searchBox.value);
     }catch(error){
-        console.error("Input error has occured, please check the input my guy", error);
+        console.error("Input error has occured, please check the input", error);
     }
 }) 
 
@@ -101,14 +101,13 @@ const renderCalendar = () => {
     let lastDateOfMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
     let liTag = '';
 
-    const today = new Date(); // Get today's date
+    const today = new Date();
 
     for (let i = firstDayOfMonth; i > 0; i--) {
         liTag += `<li class="inactive">${lastDateOfMonth - i + 1}</li>`;
     }
 
     for (let i = 1; i <= lastDateOfMonth; i++) {
-        // Check if the date being rendered matches today's date
         if (currentYear === today.getFullYear() && currentMonth === today.getMonth() && i === today.getDate()) {
             liTag += `<li class="highlighted">${i}</li>`;
         } else {
@@ -116,7 +115,6 @@ const renderCalendar = () => {
         }
     }
 
-    // Calculate the first day of the next month
     let firstDayOfNextMonth = (firstDayOfMonth + lastDateOfMonth) % 7;
 
     for (let i = 0; i < 6 - firstDayOfNextMonth; i++) {

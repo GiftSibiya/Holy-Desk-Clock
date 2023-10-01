@@ -27,9 +27,16 @@
     height: 40vh;
     justify-content: space-around;
     align-items: center;
+    transition: all 0.2s ease;
+
 }
 
 /*  <<<<<<<<<<< Weather Section >>>>>>>>>>*/
+.warning{
+    width: 150px;
+    font-size: 1.8vh;
+    color: orange;
+}
 .weather{   
     display: flex;
     flex-direction: column;
@@ -39,7 +46,6 @@
     border: 2px solid white;
     background: rgba(255, 255, 255, 20%);
 }
-    
     
 .search{
     display: flex;
@@ -110,7 +116,7 @@
 /* This is for wind and humidity info*/
 
 .extra{
-    display: none;
+    display: flex;
     font-family: sans-serif;
     justify-content: space-around;
     height: 8vh;
@@ -248,4 +254,18 @@ header .icons span{
     align-items: center;
     margin-top: 1vh;
     color: white;
+}
+
+.cute{
+    font-size: 15px;
+}
+
+@media screen and (max-width: 425px){
+    .apps{
+        display: flex;
+        height: 350px;
+        flex-direction: column;
+
+        transition: all 0.2s ease;
+    }    
 }
