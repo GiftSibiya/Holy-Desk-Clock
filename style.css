@@ -9,7 +9,7 @@
     background: linear-gradient(54deg, #42047e, #015d4a);
 }
 :root{
-    --weatherBox: 30vh;
+    --weatherBox: 180px;
 }
 
 .container{
@@ -34,7 +34,7 @@
 /*  <<<<<<<<<<< Weather Section >>>>>>>>>>*/
 .warning{
     width: 28vh;
-    font-size: 1.5vh;
+    font-size: 0.7rem;
     color: orange;
 }
 .weather{   
@@ -151,7 +151,7 @@
 
 /*<<<<<<<<<< Calender Section >>>>>>>>>>*/
 
-.calender{
+.calendar_main{
     display: flex;
     flex-direction: column;
     width: var(--weatherBox);
@@ -256,16 +256,7 @@ header .icons span{
     color: white;
 }
 
-.cute{
-    font-size: 15px;
-}
-
-.verse_generator{
-    display: flex;
-    margin-top: 20px;
-    justify-content: center;
-    align-items: center;
-}
+/*<<<<<<<<< Bible verses Generator >>>>>>>>>>*/
 
 .verse_box{
     width: 350px;
@@ -276,6 +267,12 @@ header .icons span{
     align-items: center;
     background:rgba(255, 255, 255, 0.15);
     border-radius: 5px;
+}
+.verse_generator{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
 }
 h3{
     border-bottom: 2px solid white;
@@ -291,12 +288,39 @@ h3{
 @media screen and (max-width: 460px){
     .apps{
         display: flex;
-        height: 350px;
+        height: 340px;
+        margin-top: 5px;
         flex-direction: column;
-
         transition: all 0.2s ease;
     }    
-    .clock{
-        font-size: 2.6rem;
+    .weather{
+        width: 150px;
+        height: 150px;
     }
+    .calendar_main{
+        width: 150px;
+        height: 150px;
+        margin: 10px 0px;
+    }
+    .clock{
+        font-size: 2.0rem;
+    }
+    .dayWord{
+        font-size: 0.8rem;
+    }
+    .dateLine{
+        font-size: 0.8rem;
+    }
+    .verse_box{
+        width: 250px;
+        height: 50px;
+    }
+    h3{
+        font-size: 0.8rem;
+        margin-bottom: 2px;
+    }
+    .verse{
+        width: 250px;
+    }
+
 }

@@ -46,7 +46,6 @@ const windReading = document.getElementById('windReading');
 async function checkWeather(city) {
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
     let data = await response.json();
-    //Check Api on line 31 //
     console.log(data);
     
     cityName.innerHTML = data.name;
@@ -54,6 +53,9 @@ async function checkWeather(city) {
     HumidReading.innerHTML = data.main.humidity + "%";
     windReading.innerHTML = Math.round(data.wind.speed) + "km/h";
     weatherCon.innerHTML = data.weather[0].description;
+
+    //Icons taken from the boxicons applications will be displayed accordng
+    //to the weather condition
 
     if(data.weather[0].main == 'Clouds'){
         icon.innerHTML = '<i class="bx bx-cloud">';
@@ -120,7 +122,6 @@ const renderCalendar = () => {
     for (let i = 0; i < 6 - firstDayOfNextMonth; i++) {
         liTag += `<li class="inactive">${i + 1}</li>`;
     }
-
     currentDate.innerHTML = `${months[currentMonth]} ${currentYear}`;
     days.innerHTML = liTag;
 }
