@@ -278,13 +278,38 @@ header .icons span{
 }
 h3{
     border-bottom: 2px solid white;
-    margin-bottom: 15px;
-    font-size: 1.5rem;
+    margin-bottom: 8px;
+    padding: 2px 20px;
+    font-size: 1.2rem;
+    color: white;
 }
-.verse{
+.bible__verse{
     width: 300px;
+    letter-spacing: 1px;
+    text-align: center;
     font-size: 10px;
     color: white;
+}
+.bible__control{
+    margin: 8px 0px;
+    display: flex;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.bible__arrow{
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+}
+.bible__book{
+    color: white;
+    border: 2px solid white;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    font-size: 0.8rem;
 }
 
 @media screen and (max-width: 460px){
@@ -313,16 +338,29 @@ h3{
     }
 
     /*Verse Generator*/
-    .verse_box{
-        width: 250px;
-        height: 50px;
-    }
     h3{
         font-size: 0.8rem;
-        margin-bottom: 2px;
+        margin-bottom: 5px;
     }
-    .verse{
+    .verse_box{
+        padding: 15px;
+        height: 90px;
         width: 250px;
+    }
+    .bible__verse{
+        font-size: 0.5rem;
+        width: 250px;
+    }
+    .bible__book{
+        font-size: 0.5rem;
+        border: 2px solid white;
+    }
+    .bible__arrow{
+        font-size: 15px;
+    }
+    .bible__control{
+        width: 120px;
+        margin: 2px 0px;
     }
     /* Weather Responiveness section*/
     .weather{
@@ -377,6 +415,9 @@ h3{
         margin-top: 40px;
         margin-right: 10px;
         padding: 0px;
+    }
+    .extraBlock{
+        margin: 2px 0px;
     }
     .calendar__header{
     padding-top: 0px;
