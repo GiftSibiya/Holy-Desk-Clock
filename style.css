@@ -147,31 +147,38 @@
 /*<<<<<<<<<< Calender Section >>>>>>>>>>*/
 
 .calendar_main{
-    display: flex;
-    flex-direction: column;
     width: var(--weatherBox);
     height: var(--weatherBox);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
     border: 2px solid white;
     background: rgba(255, 255, 255, 20%);
-    justify-content: center;
-    align-items: center;
 }
-    
+
 header .currentDate{
-    margin-left: 1vw;
+    margin-left: 10%;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 500px;
     color: white;
     font-weight: bold;
 }
+.calendar{
+    
+    width: auto;
+    margin-right: 10px;
+
+}
+
 .calendar ul{
     width: 110%;
     display: flex;
     list-style: none;
     flex-wrap: wrap;
     text-align: center;
-    font-size: 50%;
+    font-size: 50px;
 }
 
 
@@ -195,9 +202,8 @@ header .icons span{
 }
 .calendar .weeks li{
     font-size: 0.6rem;
-    font-weight: 500px;
     margin-bottom: 5%;
-    color: black
+    color: black;
 }
 .calendar{
     padding: 10%;
@@ -216,13 +222,16 @@ header .icons span{
 
 /*<<<<<<<<< Clock Section >>>>>>>>>>*/
 .clock{
-    color: white;
+    width: 350px;
     font-size: 4rem;
     background-color: rgba(255, 255, 255, 0.11);
     padding: 2vw 5vh;
     border-radius: 10px;
+    color: white;
+    
 }
 .dayWord{
+    width: 350px;
     font-style: bold;
     letter-spacing: 2px;
     font-size: large;
@@ -233,7 +242,7 @@ header .icons span{
 .dateLine{
     font-size: 18px;
     margin-top: 10px;
-    width: 80%;
+    width: 350px;
     display: flex;
     justify-content: space-evenly;
     margin-left: 28px;
@@ -292,11 +301,14 @@ h3{
    
     .clock{
         font-size: 2.0rem;
+        width: 170px;
     }
     .dayWord{
+        width: 170px;
         font-size: 0.8rem;
     }
     .dateLine{
+        width: 170px;
         font-size: 0.8rem;
     }
 
@@ -357,9 +369,11 @@ h3{
         width: 105%;
     }
     header .currentDate{
+        margin-top: 3px;
         font-size: 0.5rem;
     }
     header .icons span{
+        font-size: 10px;
         margin-top: 40px;
         margin-right: 10px;
         padding: 0px;
@@ -369,7 +383,7 @@ h3{
     height: 10px;
     }
     .calendar .weeks li{
-        font-size: 0.5rem ;
+        font-size: 0.4rem ;
 
     }
     .calendar .days li{
