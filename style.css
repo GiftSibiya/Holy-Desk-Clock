@@ -187,12 +187,11 @@ header .icons span{
     justify-content: center;
     align-items: center;
     justify-content: space-between;
-    padding-top: 10% ;
+    padding-top: 2% ;
 }
-
 .calendar .days li{
-    font-size: 0.8rem;
-    margin-bottom: 5%;
+    font-size: 0.6rem;
+    margin-bottom: 2%;
 }
 .calendar .weeks li{
     font-size: 0.6rem;
@@ -351,14 +350,13 @@ h3{
     /*Calendar responsiveness section*/
     .calendar_main{
         width: 120px;
-        height: 120px;
+        height: 150px;
         margin: 10px 0px;
     }
     .calendar ul{
         width: 105%;
     }
     header .currentDate{
-        margin-top: 20px;
         font-size: 0.5rem;
     }
     header .icons span{
@@ -366,8 +364,9 @@ h3{
         margin-right: 10px;
         padding: 0px;
     }
-    .wrapper header{
-    padding-top: 10% ;
+    .calendar__header{
+    padding-top: 0px;
+    height: 10px;
     }
     .calendar .weeks li{
         font-size: 0.5rem ;

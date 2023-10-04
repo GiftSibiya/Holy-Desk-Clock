@@ -54,8 +54,7 @@ async function checkWeather(city) {
     windReading.innerHTML = Math.round(data.wind.speed) + "km/h";
     weatherCon.innerHTML = data.weather[0].description;
 
-    //Icons taken from the boxicons applications will be displayed accordng
-    //to the weather condition
+    //Icons taken from the boxicons applications will be displayed accordng to the weather condition
 
     if(data.weather[0].main == 'Clouds'){
         icon.innerHTML = '<i class="bx bx-cloud">';
